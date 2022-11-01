@@ -1,0 +1,180 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+html, body {
+    height: 100%;
+}
+
+body, main, .price, .musicIcon {
+    display: flex;
+}
+
+body, main, .payment button, .cancel button, .svg svg {
+    width: 100%;
+}
+
+body, main, .price p, .text p{
+    margin: 0;
+}
+
+.price, .text p {
+    font-size: 1rem;
+}
+
+.boldPara, .payment button, .cancel button, .change{
+    font-weight: 700;
+}
+
+body, .musicIcon {
+    justify-content: center;
+    align-items: center;
+}
+
+body, main {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 7%;
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: top left;
+}
+
+main, .price {
+    border: 0;
+    border-radius: 1.5rem;
+}
+
+main {
+    flex-direction: column;
+    padding: 0%;
+    background-color: white;
+}
+
+.svg svg {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    margin: 5% 0% 3% 0%;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.text p {
+    padding: 0 2%;
+    line-height: 1.5rem;
+}
+
+.text h1, .boldPara {
+    color: hsl(223, 47%, 23%);
+}
+
+.price {
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);  
+    text-align: center;
+}
+
+.price p, a {
+    font-size: 0.9rem;
+}
+
+.musicIcon, .plan, .change {
+    flex-basis: 33.33%;
+    padding: 3% 0;
+    align-self: center;
+}
+
+.plan {
+    text-align: left;
+}
+
+.payment button, .cancel button, .price {
+    border-radius: 1rem;
+}
+
+.payment button, .cancel button{
+    padding: 5%;
+    border: 0;
+    font-size: 1rem;
+}
+
+.text, .price, .cancel, .payment{
+    margin: 0 7% 7% 7%;
+}
+
+.cancel button, .text p, .pricePara {
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+}
+
+.payment button{
+    background-color:hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 5px 10px hsl(224, 23%, 55%);
+}
+
+.payment button:hover { 
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.cancel button {
+    background-color: white;
+}
+
+.cancel button:hover {
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+}
+
+.change a:hover {
+    text-decoration: solid;
+    opacity: 0.5;
+}
+
+@media (min-width: 450px){
+    main {
+        width: 450px;
+        height: auto;
+    }
+
+    body {
+        padding: 0%;
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-size: cover;
+    }
+
+    .payment button, .cancel button, .price {
+        font-size: 1.1rem;
+    }
+
+    .price a, p {
+        font-size: 1rem;
+    }
+
+    .text h1 {
+        font-size: 1.8rem;
+    }
+
+    .text p {
+        padding: 0 5%;
+    }
+
+    .text, .price, .cancel, .payment{
+        margin: 0 7% 5% 7%;
+    }
+}
